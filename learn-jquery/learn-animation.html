@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Animation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: lightskyblue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            kotak_animation();
+        });
+
+        function kotak_animation() 
+        {
+            $(".box").animate({
+                left: "+=150",
+                opacity: 0.5
+            }, 1000, callback_animation);
+        }
+
+        // callback untuk kotak_animation 
+        function callback_animation()
+        {
+            $(this).animate({
+                opacity: 1,
+                left: "-=150"
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
