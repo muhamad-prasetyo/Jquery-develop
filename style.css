@@ -1,0 +1,65 @@
+html, body {
+    background: #ffe400;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background: none;
+}
+
+#intro #text-spesial {
+    font-size: 70px;
+    font-weight: 800;
+    width: 10.5em;
+    height: 1.5em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.opsi {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+
+.tombol-hide {
+    background-color: lightskyblue;
+    border: 3px dashed black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.tombol-show {
+    background-color: lightgreen;
+    border: 3px dotted black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#intro-button {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+ #start {
+    font-size: 15px;
+    background: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 40px;
+}
