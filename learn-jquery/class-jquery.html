@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Jquery</title>
+    <style>
+
+        .boxHijau{
+            background-color: lightgreen;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="tambah_class">Tambah Class</button>
+    <button class="hilangkan_class">Hilangkan Class</button>
+    <hr>
+
+    <div class="box">Ini adalah element yang akan ditambahkan atau dihapus classnya.</div>
+
+
+    <h5>action Class merupakan action untuk menambahkan class.</h5>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $(".tambah_class").click(function(){
+                $(".box").addClass("boxHijau");
+            });
+            $(".hilangkan_class").click(function(){
+                $(".box").removeClass("boxHijau");
+            });
+        });
+
+    </script>
+</body>
+</html>
