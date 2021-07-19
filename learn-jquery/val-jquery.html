@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val Jquery</title>
+</head>
+<body>
+    <h5>Val digunakan untuk mengset sebuah nilai dalam element form atau juga bisa mengambil nilai dari element form</h5>
+    <h5>change yaitu untuk akan menjalankan suatu ketika ada perubahan pada salah satu selector yang telah kita tentukan</h5>
+    <input type="text" id="inputText">
+    <div id="hasiltext"></div>
+
+    <hr>
+
+    <input type="radio" class="inputCheckbox" name="pilihan" value="Pilihan 1">Pilihan 1 <br>
+    <input type="radio" class="inputCheckbox" name="pilihan" value="Pilihan 2">Pilihan 2 <br>
+    <input type="radio" class="inputCheckbox" name="pilihan" value="pilihan 3">Pilihan 3 <br>
+    <div id="hasilCheckbox"></div>
+
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#inputText").val();
+
+            $(".inputCheckbox").change(function(){
+                var nilaiCheckbox = $(".inputCheckbox:radio:checked").val();
+                $("#hasilCheckbox").html(nilaiCheckbox);
+            });
+        });
+    </script>
+</body>
+</html>
